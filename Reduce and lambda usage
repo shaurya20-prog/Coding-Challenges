@@ -1,0 +1,5 @@
+from functools import reduce
+input_list = ['I','Love','Python']
+# print(' '.join(i for i in input_list))
+v=(reduce(lambda x, y: x +' '+ y, input_list))
+print(v)
