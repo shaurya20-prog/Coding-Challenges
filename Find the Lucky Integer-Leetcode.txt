@@ -1,0 +1,10 @@
+v={}
+
+for i in arr:
+    v[i]=arr.count(i)
+
+x=[i for i,j in v.items() if i==j]
+if x!=[]:
+    print(max(x,key=lambda y:y))
+else:
+    print(-1)
